@@ -1,7 +1,7 @@
 from threading import Timer
 import datetime
 
-timeout = 1000
+timeout = 2000
 simultitaneous = 100
 results = []
 
@@ -9,6 +9,7 @@ def timeFinished(arg1, arg2):
     global results
     #results.append(datetime.datetime.now() - arg1 - timeout/1000.0)
     results.append((datetime.datetime.now() - arg1 - datetime.timedelta(milliseconds=timeout)).total_seconds())
+    k = (sum(results) / float(len(results))*1000)
 
 def allFinished():
     global results

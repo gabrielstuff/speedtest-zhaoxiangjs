@@ -10,5 +10,11 @@
     "test": "node test/index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^3.10.0",
+    "moment": "^2.18.0",
+    "nanotimer": "^0.3.14",
+    "threads": "^0.7.2"
+  }
 }

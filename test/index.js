@@ -13,6 +13,12 @@ exec('node ' + path.join(__dirname, 'node/nanotimer/index.js'), function (err, s
   }
   console.log(stdout)
 })
+exec('node ' + path.join(__dirname, 'node/mano/index.js'), function (err, stdout) {
+  if (err) {
+    console.log(err)
+  }
+  console.log(stdout)
+})
 exec('python ' + path.join(__dirname, 'python/timer.py'), function (err, stdout) {
   if (err) {
     console.log(err)
